@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart - FashionAura</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="test.html">FashionAura</a>
+    <a href="wishlist.html" class="btn btn-outline-light">❤️ Wishlist</a>
+  </div>
+</nav>
+
+<!-- CART SECTION -->
+<div class="container mt-5">
+    <h2 class="mb-4">🛒 Your Shopping Cart</h2>
+
+    <!-- Product Item -->
+    <div class="card mb-3 p-3">
+        <div class="row align-items-center">
+
+            <div class="col-md-3">
+                <img src="images/menwhiteshirt.jpg" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-4">
+                <h5>Classic White Shirt</h5>
+                <p class="text-muted">₹1,499</p>
+            </div>
+
+            <div class="col-md-2">
+                <input type="number" value="1" class="form-control">
+            </div>
+
+            <div class="col-md-3">
+                <button class="btn btn-danger w-100">Remove</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Total Section -->
+    <div class="text-end mt-4">
+        <h4>Total: ₹1,499</h4>
+        <button class="btn btn-success mt-2">Proceed to Checkout</button>
+    </div>
+</div>
+
+<footer class="bg-dark text-white text-center p-3 mt-5">
+    © 2026 FashionAura
+</footer>
+
+</body>
+</html>

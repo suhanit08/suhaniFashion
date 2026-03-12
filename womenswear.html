@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Women's Fashion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .product-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Ribbon Container */
+.ribbon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+/* Ribbon Text */
+.ribbon span {
+    position: absolute;
+    display: block;
+    width: 200px;
+    padding: 8px 0;
+    background: red;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    transform: rotate(-45deg);
+    top: 25px;
+    left: -50px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+/* Price */
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 8px;
+}
+
+.new-price {
+    color: red;
+    font-weight: bold;
+}
+        .button{
+            text-decoration: none;
+            color: black;
+        }
+        </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">ShopEasy</a>
+    <span class="text-white">Women's Collection</span>
+    <div>
+      <a href="wishlist.html" class="btn btn-outline-light me-2">❤️</a>
+      <a href="cart.html" class="btn btn-warning">🛒</a>
+    </div>
+  </div>
+</nav>
+
+<!-- BANNER -->
+<div class="women-banner d-flex align-items-center justify-content-center text-white">
+    <h1 class="fw-bold">WOMEN'S FASHION</h1>
+</div>
+
+<!-- CATEGORY BUTTONS -->
+<div class="container text-center mt-4">
+    <button class="btn btn-outline-dark m-2"><a href="allwomenwear.html" class="button">All</a></button>
+    <button class="btn btn-outline-dark m-2"><a href="dresses.html" class="button">Dresses</a></button>
+    <button class="btn btn-outline-dark m-2"><a href="tops.html" class="button">Tops</a></button>
+    <button class="btn btn-outline-dark m-2"><a href="shoesw.html" class="button">shoes</a></button>
+    <button class="btn btn-outline-dark m-2"><a href="bags.html" class="button">Bags</a></button>
+</div>
+
+<!-- PRODUCTS -->
+<div class="container mt-5">
+  <div class="row g-4">
+
+   <div class="col-md-3">
+      <div class="card product-card">
+        
+
+        <div class="ribbon">
+            <span>35% OFF</span>
+        </div>
+
+        <img src="images/floralfrock.jpg" class="card-img-top">
+
+        <div class="card-body text-center">
+          <h6>Floral Summer Dress</h6>
+          <p>
+            <span class="old-price">₹2,999</span>
+            <span class="new-price">₹1,950</span>
+          </p>
+          <button class="btn btn-dark w-100">Buy Now</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card product-card">
+        <div class="ribbon">
+            <span>40% OFF</span>
+        </div>
+
+        <img src="images/stylishhandbag.jpg" class="card-img-top">
+
+        <div class="card-body text-center">
+          <h6>Stylish Handbag</h6>
+          <p>
+            <span class="old-price">₹3,499</span>
+            <span class="new-price">₹2,100</span>
+          </p>
+          <button class="btn btn-dark w-100">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card product-card">
+        <img src="images/casualsneakers.jpg" class="card-img-top">
+        <div class="card-body text-center">
+          <h6>Casual Sneakers</h6>
+          <p class="text-muted">₹2,500</p>
+          <button class="btn btn-dark w-100">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card product-card">
+        <img src="images/elegantpartygown.jpg" class="card-img-top">
+        <div class="card-body text-center">
+          <h6>Elegant Party Gown</h6>
+          <p class="text-muted">₹4,999</p>
+          <button class="btn btn-dark w-100">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3 mt-5">
+  © 2026 ShopEasy
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

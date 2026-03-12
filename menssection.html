@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>men's section</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .men-banner{
+            height:350px;
+            background:url("images/mensbanner.jpg") center/cover no-repeat; ;
+        }
+        .product-card img{
+            width:100%;
+            height:250px;
+            object-fit:cover;
+            
+        }
+        .product-card{
+            position:relative;
+            overflow:hidden;
+            width:100%;
+            max-width: 100%;
+        }
+        .product-card:hover{
+            transform: translateY(-8px);
+        }
+        .product-card img{
+            height: 250px;
+            object-fit:cover;
+        }
+        .discount-badge{
+            position:absolute;
+            top:0px;
+            left:0px;
+                background:red;
+            color:white;
+            padding:5px 10px;
+            font-size:13px;
+            font-weight:bold;
+            border-radius:5px;
+            z-index: 1;
+        }
+        .old-price{
+            text-decoration: line-through;
+            color:gray;
+            margin-right: 8px;
+        }
+        .new-price{
+            color:red;
+            font-weight:bold;
+        }
+        .button{
+            text-decoration: none;
+            color: black;
+        }
+          .wishlist-icon{
+            position:absolute;
+            top:10px;
+            right:10px;
+            background:white;
+            width:35px;
+            height:35px;
+            border-radius:50%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .wishlist-icon:hover{
+            background:red;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+     <div class="container">
+        <a  class="navbar-brand" href="fashionAura.html">FashionAura</a>
+        <span class="text-white">Men's collection</span>
+         <div>
+      <a href="wishlist.html" class="btn btn-outline-light me-2">❤️</a>
+      <a href="cart.html" class="btn btn-warning">🛒</a>
+    </div>
+     </div>
+    </nav>
+    <div class="men-banner text-center d-flex align-items-center justify-content-center">
+        <h1 class="fw-bold">Men's Fashion</h1>
+    </div>
+    <div class="container text-center mt-4">
+        <div class="bg-dark text-white text-center p-4 rounded">
+            <h4>🔥 Flat 40% OFF on Mrn's collection</h4>
+            <p>limited Time offer -- shop Now!</p>
+        </div>
+        <button class="btn btn-outline-dark m-2"><a href="allmenwear.html" class="button">All</a></button>
+        <button class="btn btn-outline-dark m-2"><a href="shirts.html" class="button">shirts</a></button>
+         <button class="btn btn-outline-dark m-2"><a href="pants.html" class="button">pants</a></button>
+          <button class="btn btn-outline-dark m-2"><a href="shoes.html" class="button">Shoes</a></button>
+           <button class="btn btn-outline-dark m-2"><a href="watches.html" class="button">watches</a></button>
+    </div>
+<div class="container mt-5">
+    <div class="row g-4">
+        <div class="col-md-3">
+            <div class="card product-card position-relative">
+                <div class="discount-badge">
+                    40% OFF
+                </div>
+                <img src="images/whiteshirtmen.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h6>Classic white shirt</h6>
+                    <p class="text-muted">
+                        <span class="old-price">₹2,000</span>
+                        <span class="new-price">
+                        ₹1,499
+                    </span></p>
+                    <button class="btn btn-dark w-100">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card product-card">
+                 <div class="wishlist-icon">
+                    <i class="bi bi-heart"></i>
+                 </div>
+                <img src="images/casualshirt.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h6>Casual T-shirt</h6>
+                    <p class="text-muted">₹999</p>
+                    <button class="btn btn-dark w-100">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card product-card">
+                 <div class="wishlist-icon">
+                    <i class="bi bi-heart"></i>
+                 </div>
+                <img src="images/running shoes men.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h6>Running Shoes</h6>
+                    <p class="text-muted">₹3,499</p>
+                    <button class="btn btn-dark w-100">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card product-card">
+                 <div class="wishlist-icon">
+                    <i class="bi bi-heart"></i>
+                 </div>
+                
+                <img src="images/luxury watch men.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h6>Luxury Watch</h6>
+                    <p class="text-muted">₹5,999</p>
+                    <button class="btn btn-dark w-100">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer class="bg-dark text-white text-center p-3 mt-5">
+    © 2026 FashionAura
+    </footer>
+    
+</body>
+           
+</html>
